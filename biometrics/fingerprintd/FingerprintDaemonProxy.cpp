@@ -16,7 +16,7 @@
 #define LOG_NDEBUG 0
 #define LOG_TAG "FingerprintDaemonProxy"
 
-#include <android/security/IKeystoreService.h>
+#include <android/security/keystore/IKeystoreService.h>
 #include <cutils/properties.h>
 #include <binder/IServiceManager.h>
 #include <hardware/hardware.h>

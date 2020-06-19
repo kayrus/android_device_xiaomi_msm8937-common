@@ -13,6 +13,7 @@ LOCAL_SRC_FILES := \
     fingerprintd/IFingerprintDaemonCallback.cpp \
     fingerprintd/IFingerprintDaemon.cpp \
     fingerprintd/wrapper.cpp
+LOCAL_C_INCLUDES := system/security/keystore/include
 
 LOCAL_SHARED_LIBRARIES := \
     libbinder \
@@ -23,8 +24,6 @@ LOCAL_SHARED_LIBRARIES := \
     libhardware \
     libutils \
     libhwbinder \
-    libkeystore_aidl \
-    libkeystore_binder \
     android.hardware.biometrics.fingerprint@2.1 \
 
 include $(BUILD_EXECUTABLE)
